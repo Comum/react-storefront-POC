@@ -1,0 +1,53 @@
+{
+    "user": {
+        "info": {
+            "firstName": "Miguel",
+            "surName": "",
+            "email": "miguel@test.com",
+            "password": "cantBeBotheredWithHashes"
+        },
+        "isLoggedin": false
+    },
+    "products": [
+      {
+        "id": 1,
+        "name": "Bananas",
+        "category": "Fruit",
+        "cost": {
+            "price": 0.97,
+            "currency": "\u20AC",
+            "unit": "kg"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Mango",
+        "category": "Fruit",
+        "cost": {
+            "price": 1.47,
+            "currency": "\u20AC",
+            "unit": "kg"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Chickem",
+        "category": "Meat",
+        "cost": {
+            "price": 2.64,
+            "currency": "\u20AC",
+            "unit": "kg"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Beef",
+        "category": "Meat",
+        "cost": {
+            "price": 5.92,
+            "currency": "\u20AC",
+            "unit": "kg"
+        }
+      }
+    ]
+  }
