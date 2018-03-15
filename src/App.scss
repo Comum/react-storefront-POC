@@ -1,12 +1,11 @@
 // Variables need to be imported first
-@import './scss/variables/variables.scss';
+@import './scss/variables/_variables.scss';
 
 // Main
-@import './scss/base/main.scss';
+@import './scss/base/_main.scss';
 
 // Components
-@import './scss/components/header.scss';
-@import './scss/components/header.scss';
+@import './scss/components/_header.scss';
 
 // Helpers
-@import './scss/helpers/margin.scss';
+@import './scss/helpers/_margin.scss';

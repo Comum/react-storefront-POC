@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import './App.css';
 
 import Home from './pages/home.js';
@@ -10,15 +11,24 @@ import Account from './pages/account.js';
 import Header from './components/header/header.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.props = props
+  }
+
   render() {
+    console.log(this.props);
+
     return (
-      <Router>
-        <div className="App">
-          <Header />
-          <Route exact path="/" render={() => (<Home />)} />
-          <Route exact path="/account" render={() => (<Account />)} />
-        </div>
-      </Router>
+      <Provider store={this.props.store}>
+        <Router>
+          <div className="App">
+            <Header />
+            <Route exact path="/" render={() => (<Home />)} />
+            <Route exact path="/account" render={() => (<Account />)} />
+          </div>
+        </Router>
+      </Provider>
     );
   }
 }

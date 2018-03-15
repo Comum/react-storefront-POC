@@ -1,13 +1,16 @@
 {
-    "user": {
-        "info": {
+    "currentUser": {
+        "isLoggedin": false
+    },
+    "users": [
+        {
+            "id": 1,
             "firstName": "Miguel",
             "surName": "",
             "email": "miguel@test.com",
             "password": "cantBeBotheredWithHashes"
-        },
-        "isLoggedin": false
-    },
+        }
+    ],
     "products": [
       {
         "id": 1,

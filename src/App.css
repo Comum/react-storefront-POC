@@ -17,18 +17,6 @@ body {
 .header--logo {
   height: 40px; }
 
-.header {
-  width: 100%;
-  height: 50px;
-  background-color: lightGrey;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-.header--logo {
-  height: 40px; }
-
 .m-0 {
   margin: 0px !important; }
 
