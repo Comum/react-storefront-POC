@@ -6,9 +6,7 @@ const INITIAL_STATE = {
     currentUserInfo: {}
 }
 
-function isUserLoggedIn(state, userStatus) {
-    console.log(userStatus.isLoggedin);
-    
+function isUserLoggedIn(state, userStatus) { console.log('aqui');
     return {
         ...state,
         currentUserStatus: userStatus.isLoggedin

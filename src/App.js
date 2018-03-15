@@ -10,6 +10,8 @@ import Home from './pages/home.js';
 import Account from './pages/account.js';
 import Header from './components/header/header.js';
 
+import HomeContainer from './containers/homeContainer';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -17,14 +19,12 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props);
-
     return (
       <Provider store={this.props.store}>
         <Router>
           <div className="App">
             <Header />
-            <Route exact path="/" render={() => (<Home />)} />
+            <Route exact path="/" component={HomeContainer} />
             <Route exact path="/account" render={() => (<Account />)} />
           </div>
         </Router>
