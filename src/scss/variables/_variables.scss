@@ -2,5 +2,10 @@
 $spacer-base: 4; // Base number of pixels for a spacer
 $spacer-multiples: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
+//borders
+$border-radius: 4px;
+
 // Colors
-$headerColor: lightGrey;
+$header-color: lightGrey;
+$color-divider: darkGrey;
+$color-hover: Gainsboro;

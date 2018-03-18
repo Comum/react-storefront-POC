@@ -5,6 +5,12 @@ body {
   margin: 0;
   padding: 0; }
 
+input {
+  width: calc(100% - 20px);
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 4px; }
+
 .icon {
   width: 20px;
   height: 20px;
@@ -40,6 +46,37 @@ body {
 
 .header--logo {
   height: 40px; }
+
+.SearchBar {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.SearchBar--input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.SearchBar--search {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-left: 2px solid darkGrey;
+  position: absolute;
+  top: 10px;
+  right: 2px; }
+
+.SearchBar--search:hover {
+  background-color: Gainsboro; }
 
 .m-0 {
   margin: 0px !important; }
