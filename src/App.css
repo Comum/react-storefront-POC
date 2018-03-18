@@ -11,6 +11,11 @@ input {
   padding: 0 8px;
   border-radius: 4px; }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
 .icon {
   width: 20px;
   height: 20px;
@@ -34,6 +39,22 @@ input {
 
 .icon-user-16 {
   background-image: url("./assets/icons/user-16.svg"); }
+
+.Dropdown {
+  background-color: lightGrey; }
+
+.Dropdown--user {
+  width: 200px;
+  position: absolute;
+  top: 100%;
+  right: 0; }
+
+.Dropdown--option {
+  width: calc(100% - 16px);
+  margin: 8px 8px 0; }
+
+.Dropdown--option:last-child {
+  margin: 8px; }
 
 .header {
   width: 100%;
@@ -77,6 +98,15 @@ input {
 
 .SearchBar--search:hover {
   background-color: Gainsboro; }
+
+.UserField {
+  width: 36px;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .m-0 {
   margin: 0px !important; }

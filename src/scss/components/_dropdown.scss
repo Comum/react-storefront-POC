@@ -1,0 +1,21 @@
+.Dropdown {
+    background-color: $header-color;
+}
+
+.Dropdown--user {
+    width: 200px;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+.Dropdown--option {
+    width: calc(100% - 16px);
+
+    margin: 8px 8px 0;
+}
+
+.Dropdown--option:last-child {
+    margin: 8px;
+}

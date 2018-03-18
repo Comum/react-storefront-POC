@@ -6,8 +6,10 @@
 @import './scss/base/_icons.scss';
 
 // Components
+@import './scss/components/_dropdown.scss';
 @import './scss/components/_header.scss';
 @import './scss/components/_searchBar.scss';
+@import './scss/components/_userField.scss';
 
 // Helpers
 @import './scss/helpers/_margin.scss';

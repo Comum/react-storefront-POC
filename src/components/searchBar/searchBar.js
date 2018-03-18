@@ -2,8 +2,6 @@ import React from 'react';
 
 class SearchBar extends React.Component {
     render() {
-        const placeholderText = 'This is the search component';
-
         return (
             <div className="SearchBar">
                 <div className="SearchBar--input">

@@ -2,6 +2,30 @@
     "currentUser": {
         "isLoggedin": false
     },
+    "notLoggedUserRoutes": [
+        {
+            "id": 1,
+            "value": "Sign in",
+            "route": "/signin"
+        },
+        {
+            "id": 2,
+            "value": "Register",
+            "route": "/register"
+        }
+    ],
+    "loggedUserRoutes": [
+        {
+            "id": 1,
+            "value": "Profile",
+            "route": "/signin"
+        },
+        {
+            "id": 2,
+            "value": "Log out",
+            "route": "/logout"
+        }
+    ],
     "users": [
         {
             "id": 1,

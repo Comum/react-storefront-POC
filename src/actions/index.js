@@ -22,3 +22,20 @@ export const userLoggedIn = _ => {
             .then(json => dispatch(receiveUserLoggedInStatus(json)));
     }
 }
+
+const receiveUserRoutes = createAction(userActions.USER_ROUTES);
+export const getUserRoutes = _ => {
+    return dispatch => {
+        return fetch(`${SERVER_URL}/currentUser`)
+            .then(response => response.json())
+            .then(json => {
+                if (json.currentUser.isLoggedin) {
+                    return fetch(`${SERVER_URL}/loggedUserRoutes`)
+                } else {
+                    return fetch(`${SERVER_URL}/notLoggedUserRoutes`)
+                }
+            })
+            .then(response => response.json())
+            .then(json => dispatch(receiveUserRoutes(json)));
+    }
+}

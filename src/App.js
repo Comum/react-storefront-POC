@@ -21,7 +21,7 @@ class App extends Component {
       <Provider store={this.props.store}>
         <Router>
           <div className="App">
-            <Header />
+            <Header onClickUserIcon={this.props.onClickUserIcon} />
             <Route exact path="/" component={HomeContainer} />
             <Route exact path="/account" render={() => (<Account />)} />
           </div>

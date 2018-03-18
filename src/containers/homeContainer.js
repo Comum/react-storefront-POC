@@ -1,5 +1,6 @@
 import {connect} from 'react-redux';
 
+import {getUserRoutes} from '../actions';
 import Home from '../pages/home';
 
 const stateToProps = state => {
@@ -9,7 +10,11 @@ const stateToProps = state => {
 }
 
 const dispatchToProps = dispatch => {
-    return {};
+    return {
+        onClickUserIcon: (...args) => {
+            dispatch(getUserRoutes(...args))
+        }
+    };
 }
 
 const homeContainer = connect(stateToProps, dispatchToProps)(Home);
