@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>user-16-black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Black-(#292E31)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="user-16-black" sketch:type="MSArtboardGroup" fill="#292E31">
+            <g sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)" id="Fill-198">
+                <path d="M13,14 C12.447,14 12,13.552 12,13 C12,11.181 11.009,9.503 9.413,8.622 C9.142,8.472 8.956,8.205 8.908,7.899 C8.861,7.593 8.958,7.283 9.171,7.058 C9.705,6.494 10,5.763 10,5 C10,3.346 8.654,2 7,2 C5.346,2 4,3.346 4,5 C4,5.763 4.295,6.494 4.829,7.058 C5.042,7.283 5.139,7.593 5.092,7.899 C5.044,8.205 4.858,8.472 4.587,8.622 C2.991,9.503 2,11.181 2,13 C2,13.552 1.553,14 1,14 C0.447,14 0,13.552 0,13 C0,10.835 1.002,8.813 2.675,7.498 C2.235,6.743 2,5.885 2,5 C2,2.243 4.243,0 7,0 C9.757,0 12,2.243 12,5 C12,5.885 11.765,6.743 11.325,7.498 C12.998,8.813 14,10.835 14,13 C14,13.552 13.553,14 13,14" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

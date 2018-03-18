@@ -1,8 +1,9 @@
 // Variables need to be imported first
 @import './scss/variables/_variables.scss';
 
-// Main
+// Base
 @import './scss/base/_main.scss';
+@import './scss/base/_icons.scss';
 
 // Components
 @import './scss/components/_header.scss';

@@ -10,7 +10,9 @@ class Header extends React.Component {
                 <NavLink to="/">
                     <img className="header--logo m-l-8" src={logo} alt="Logo"/>
                 </NavLink>
-                <NavLink className="m-r-8" to="/account">My account</NavLink>   
+                <NavLink className="m-r-8" to="/account">
+                    <div className="icon icon-user-16"></div>
+                </NavLink>   
             </div>
         );
     }

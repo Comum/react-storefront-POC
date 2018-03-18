@@ -1,0 +1,14 @@
+.icon {
+    width: 20px;
+    height: 20px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+$image-list-16: chevron-down, chevron-left, chevron-right, chevron-up, search, user;
+@each $image-16 in $image-list-16 {
+    .icon-#{$image-16}-16 {
+        background-image: url("./assets/icons/#{$image-16}-16.svg");
+    }
+}

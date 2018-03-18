@@ -7,13 +7,14 @@ class Home extends React.Component {
     }
 
     render() {
+        const userStatus = this.props.user.currentUserStatus ? 'logged in' : 'logged out';
         console.log('home.js props', this.props, this.props.user.currentUserStatus);
         
         return (
             <div className="HomePage">
                 Home Page
                 <br />
-                User status:
+                User status: {userStatus}
             </div>
         );
     }

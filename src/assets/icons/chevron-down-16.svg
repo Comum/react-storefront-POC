@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron-down-small-black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="chevron-down-small-black" sketch:type="MSArtboardGroup" fill="#292E31">
+            <path d="M8.000375,11.41425 L3.293375,6.70725 C2.902375,6.31625 2.902375,5.68425 3.293375,5.29325 C3.683375,4.90225 4.316375,4.90225 4.707375,5.29325 L8.000375,8.58625 L11.293375,5.29325 C11.683375,4.90225 12.316375,4.90225 12.707375,5.29325 C13.097375,5.68425 13.097375,6.31625 12.707375,6.70725 L8.000375,11.41425" id="Imported-Layers" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
