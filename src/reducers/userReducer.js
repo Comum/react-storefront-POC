@@ -1,4 +1,3 @@
-import actions from '../actions';
 import user from '../actions/userActions';
 
 const INITIAL_STATE = {

@@ -6,11 +6,9 @@ import {
 import { Provider } from 'react-redux';
 import './App.css';
 
-import Home from './pages/home.js';
+import HomeContainer from './containers/homeContainer';
 import Account from './pages/account.js';
 import Header from './components/header/header.js';
-
-import HomeContainer from './containers/homeContainer';
 
 class App extends Component {
   constructor(props) {
