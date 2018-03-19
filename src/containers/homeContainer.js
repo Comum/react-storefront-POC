@@ -15,7 +15,7 @@ const dispatchToProps = dispatch => {
             dispatch(getUserRoutes(...args))
         }
     };
-}
+};
 
 const homeContainer = connect(stateToProps, dispatchToProps)(Home);
 
