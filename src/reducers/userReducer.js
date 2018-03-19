@@ -13,7 +13,10 @@ function isUserLoggedIn(state, userStatus) {
     };
 }
 
-function sendUserRoutes(state, userRoutes) { console.log('aqui');
+function sendUserRoutes(state, userRoutes) {
+
+    console.log('userRoutes', userRoutes);
+
     return {
         ...state,
         userRoutes: userRoutes
@@ -27,7 +30,7 @@ export default (state, action) => {
     switch (action.type) {
         case user.USER_LOGGED_IN:
             return isUserLoggedIn(state, action.data);
-        case user.USER_LOGGED_IN:
+        case user.USER_ROUTES:
             return sendUserRoutes(state, action.data);
         default:
             return state;

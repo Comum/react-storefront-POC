@@ -1,6 +1,5 @@
 import {connect} from 'react-redux';
 
-import {getUserRoutes} from '../actions';
 import Home from '../pages/home';
 
 const stateToProps = state => {
@@ -11,9 +10,7 @@ const stateToProps = state => {
 
 const dispatchToProps = dispatch => {
     return {
-        onClickUserIcon: (...args) => {
-            dispatch(getUserRoutes(...args))
-        }
+
     };
 };
 

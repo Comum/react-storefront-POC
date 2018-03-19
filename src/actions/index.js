@@ -29,13 +29,16 @@ export const getUserRoutes = _ => {
         return fetch(`${SERVER_URL}/currentUser`)
             .then(response => response.json())
             .then(json => {
-                if (json.currentUser.isLoggedin) {
+                if (json.isLoggedin) {
                     return fetch(`${SERVER_URL}/loggedUserRoutes`)
                 } else {
                     return fetch(`${SERVER_URL}/notLoggedUserRoutes`)
                 }
             })
             .then(response => response.json())
-            .then(json => dispatch(receiveUserRoutes(json)));
+            .then(json => {
+                console.log('json', json);
+                return dispatch(receiveUserRoutes(json));
+            });
     }
 }

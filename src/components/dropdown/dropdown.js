@@ -11,12 +11,13 @@ class Dropdown extends React.Component {
         let elClasses = ['Dropdown'];
 
         elClasses.push('Dropdown--' + this.props.dropdownOptionsName);
-
+console.log('dropdown', this.props);
         return (
             <ul className={elClasses.join(' ')}>
-                <li className="Dropdown--option">First</li>
-                <li className="Dropdown--option">Second</li>
-                <li className="Dropdown--option">Third</li>
+                {this.props.routes.map(route =>
+                <li className="Dropdown--option" key={route.id}>
+                    <NavLink to={route.route}>{route.value}</NavLink>
+                </li>)}
             </ul>
         );
     }
