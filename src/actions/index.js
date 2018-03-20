@@ -37,7 +37,6 @@ export const getUserRoutes = _ => {
             })
             .then(response => response.json())
             .then(json => {
-                console.log('json', json);
                 return dispatch(receiveUserRoutes(json));
             });
     }

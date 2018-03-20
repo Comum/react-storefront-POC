@@ -8,13 +8,17 @@ class Dropdown extends React.Component {
     }
 
     render() {
+        const routes = this.props.routes ? this.props.routes : [];
         let elClasses = ['Dropdown'];
+
+        // TODO: change join to classNames
+        // TODO: use componentWillReceiveProps to get the proper props
 
         elClasses.push('Dropdown--' + this.props.dropdownOptionsName);
 console.log('dropdown', this.props);
         return (
             <ul className={elClasses.join(' ')}>
-                {this.props.routes.map(route =>
+                {routes.map(route =>
                 <li className="Dropdown--option" key={route.id}>
                     <NavLink to={route.route}>{route.value}</NavLink>
                 </li>)}
