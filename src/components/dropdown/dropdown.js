@@ -5,10 +5,17 @@ class Dropdown extends React.Component {
     constructor(props) {
         super(props);
         this.props = props;
+        // this.state = {
+        //     routes: []
+        // }
     }
 
+    // componentWillReceiveProps(nextProps) {
+    //     console.log('props', nextProps);
+    // }
+
     render() {
-        const routes = this.props.routes ? this.props.routes : [];
+        const routes = this.props.routes.length ? this.props.routes : [];
         let elClasses = ['Dropdown'];
 
         // TODO: change join to classNames
