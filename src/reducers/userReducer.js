@@ -14,9 +14,6 @@ function isUserLoggedIn(state, userStatus) {
 }
 
 function sendUserRoutes(state, userRoutes) {
-
-    console.log('userRoutes', userRoutes);
-
     return {
         ...state,
         userRoutes: userRoutes

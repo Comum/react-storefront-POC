@@ -22,8 +22,6 @@ class UserField extends React.Component {
         const optionsName = 'user';
         let userRoutes = this.props.userRoutes ? this.props.userRoutes : [];
 
-        console.log('userFields', this.props);
-
         return (
             <div className="UserField">
                 <div className="icon icon-user-16" onClick={this.handleClick}></div>
