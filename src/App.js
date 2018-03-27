@@ -7,7 +7,8 @@ import { Provider } from 'react-redux';
 import './App.css';
 
 import HomeContainer from './containers/homeContainer';
-import Account from './pages/account.js';
+import SignIn from './pages/signIn.js';
+import Register from './pages/registerPage.js';
 import Header from './components/header/header.js';
 
 class App extends Component {
@@ -23,7 +24,8 @@ class App extends Component {
           <div className="App">
             <Header />
             <Route exact path="/" component={HomeContainer} />
-            <Route exact path="/account" render={() => (<Account />)} />
+            <Route exact path="/signIn" render={() => (<SignIn />)} />
+            <Route exact path="/register" render={() => (<Register />)} />
           </div>
         </Router>
       </Provider>

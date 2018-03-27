@@ -16,6 +16,12 @@ ul {
   padding: 0;
   list-style-type: none; }
 
+a {
+  text-decoration: none;
+  color: black; }
+  a:hover {
+    text-decoration: underline; }
+
 .icon {
   width: 20px;
   height: 20px;
@@ -43,10 +49,25 @@ ul {
 .Dropdown {
   background-color: lightGrey; }
 
-.Dropdown--user {
-  width: 200px;
+.Dropdown--arrow {
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+  border-bottom: 0px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: lightGrey;
+  z-index: 10;
   position: absolute;
   top: 100%;
+  right: 8px; }
+
+.Dropdown--user {
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 4px;
+  position: absolute;
+  top: calc(100% + 16px);
   right: 0; }
 
 .Dropdown--option {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 
 class Dropdown extends React.Component {
     constructor(props) {
@@ -20,18 +20,22 @@ class Dropdown extends React.Component {
     }
 
     render() {
-        let elClasses = classNames({
+        /*let elClasses = classNames({
             'Dropdown': true,
             ['Dropdown--' + this.state.dropdownOptionsName]: true
-        });
+        });*/
+        let elClasses = `Dropdown Dropdown--${this.state.dropdownOptionsName}`;
 
         return (
-            <ul className={elClasses}>
-                {this.state.routes.map(route =>
-                <li className="Dropdown--option" key={route.id}>
-                    <NavLink to={route.route}>{route.value}</NavLink>
-                </li>)}
-            </ul>
+            <div>
+                <div className="Dropdown--arrow"></div>
+                <ul className={elClasses}>
+                    {this.state.routes.map(route =>
+                    <li className="Dropdown--option" key={route.id}>
+                        <NavLink to={route.route}>{route.value}</NavLink>
+                    </li>)}
+                </ul>
+            </div>
         );
     }
 }
