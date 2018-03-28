@@ -47,27 +47,12 @@ a {
   background-image: url("./assets/icons/user-16.svg"); }
 
 .Dropdown {
-  background-color: lightGrey; }
-
-.Dropdown--arrow {
-  width: 16px;
-  height: 16px;
-  border: 1px solid black;
-  border-bottom: 0px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
   background-color: lightGrey;
-  z-index: 10;
-  position: absolute;
-  top: 100%;
-  right: 8px; }
-
-.Dropdown--user {
   width: 200px;
   border: 1px solid black;
   border-radius: 4px;
   position: absolute;
-  top: calc(100% + 16px);
+  top: 100%;
   right: 0; }
 
 .Dropdown--option {

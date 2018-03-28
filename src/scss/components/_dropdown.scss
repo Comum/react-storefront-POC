@@ -1,33 +1,13 @@
 .Dropdown {
     background-color: $header-color;
-}
 
-.Dropdown--arrow {
-    width: 16px;
-    height: 16px;
-
-    border: 1px solid $dropdown-border-color; 
-    border-bottom: 0px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-
-    background-color: $header-color;
-
-    z-index: 10;
-
-    position: absolute;
-    top: 100%;
-    right: 8px;
-}
-
-.Dropdown--user {
     width: 200px;
 
     border: 1px solid $dropdown-border-color;
     border-radius: $border-radius; 
 
     position: absolute;
-    top: calc(100% + 16px);
+    top: 100%;
     right: 0;
 }
 
