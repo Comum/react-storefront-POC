@@ -1,6 +1,6 @@
 import fetch from 'cross-fetch';
 
-import accountActions from './accountActions'
+import accountActions from './account-actions'
 
 const SERVER_URL = 'http://localhost:3001';
 

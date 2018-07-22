@@ -10,8 +10,8 @@ import { ThemeProvider, injectGlobal } from 'styled-components';
 
 import { globalStyle } from '../../variables/global-style';
 import Header from '../Header/Header';
-import HomeContainer from '../Home/HomeContainer';
-import SignIn from '../SignIn/SignIn';
+import HomeContainer from '../Home/Home-container';
+import SignIn from '../SignIn/Sign-in';
 import Register from '../Register/Register';
 
 injectGlobal`${globalStyle}`;

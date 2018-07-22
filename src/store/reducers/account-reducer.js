@@ -1,4 +1,4 @@
-import account from '../actions/accountActions';
+import account from '../actions/account-actions';
 
 const INITIAL_STATE = {
     currentAccountStatus: false

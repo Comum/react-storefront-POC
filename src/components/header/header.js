@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import { values } from '../../variables/style-guide';
-import SearchBar from '../SearchBar/SearchBar';
-import UserField from '../UserField/UserField';
+import SearchBar from '../SearchBar/Search-bar';
+import UserField from '../UserField/User-field';
 
 const HeaderBar = styled.div`
   width: 100%;
