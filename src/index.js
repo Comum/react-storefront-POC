@@ -1,24 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-import { routerReducer } from 'react-router-redux';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { AppContainer } from 'react-hot-loader'
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
 
-import { userLoggedIn } from './actions';
-import reducers from './reducers';
+import App from './components/App/App'
+import registerServiceWorker from './registerServiceWorker'
+import reducers from './store/reducers'
+import { accountLoggedIn } from './store/actions'
 
-const store = createStore(
-    combineReducers({
-        ...reducers,
-        routing: routerReducer
-    }),
-    applyMiddleware(thunk)
-  );
+const store = createStore(reducers, applyMiddleware(thunk))
 
-ReactDOM.render(<App store={store} />, document.getElementById('root'));
+const render = (Component) => {
+  ReactDOM.render(
+    <AppContainer>
+      <Component store={store} />
+    </AppContainer>,
+    document.getElementById('root'), // eslint-disable-line
+  )
+}
+
+render(App)
 registerServiceWorker();
 
-store.dispatch(userLoggedIn());
+if (module.hot) {
+  module.hot.accept('./components/App/App.js', () => {
+    const NextApp = require('./components/App/App.js').default // eslint-disable-line
+    render(NextApp)
+  })
+}
+
+store.dispatch(accountLoggedIn());

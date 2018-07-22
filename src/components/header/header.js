@@ -1,45 +1,37 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import {NavLink} from 'react-router-dom';
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
-import logo from '../../assets/logo.png';
-import SearchBar from '../searchBar/searchBar.js';
-import UserField from '../userField/userField.js';
+import { values } from '../../variables/style-guide';
+import SearchBar from '../SearchBar/SearchBar';
+import UserField from '../UserField/UserField';
 
-import {getUserRoutes} from '../../actions';
+const HeaderBar = styled.div`
+  width: 100%;
+  height: 50px;
 
-class Header extends React.Component {
-    constructor(props) {
-        super(props);
-        this.props = props;
-    }
+  background-color: ${values.colours["$header-color"]};
 
-    render() {
-        const userRoutes = this.props.user.userRoutes ? this.props.user.userRoutes : [];
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
 
-        return (
-            <div className="header">
-                <NavLink to="/">
-                    <img className="header--logo m-l-8" src={logo} alt="Logo"/>
-                </NavLink>
-                <SearchBar />
-                <UserField onClickUserIcon={this.props.onClickUserIcon} userRoutes={userRoutes}/>
-            </div>
-        );
-    }
+const LogoArea = styled.img`
+  height: 40px;
+  margin-left: 8px;
+  cursor: pointer;
+`;
+
+export default class Header extends Component {
+
+  render() {
+    return (
+      <HeaderBar>
+        <LogoArea src="../../assets/logo.png" alt="Logo"/>
+        <SearchBar />
+        <UserField />
+      </HeaderBar>
+    )
+  }
 }
-
-const stateToProps = state => {
-    return {
-        user: state.user
-    };
-}
-
-function mapDispatchToProps(dispatch) {  
-    return {
-        onClickUserIcon: (...args) => {
-            dispatch(getUserRoutes(...args))
-    }};
-}
-
-export default connect(stateToProps, mapDispatchToProps)(Header);
