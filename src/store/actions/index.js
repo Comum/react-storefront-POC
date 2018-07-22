@@ -1,8 +1,5 @@
-import fetch from 'cross-fetch';
-
+import { fetchInfoFromServer } from './action-helpers'
 import accountActions from './account-actions'
-
-const SERVER_URL = 'http://localhost:3001';
 
 function createAction(actionType) {
     return data => {
@@ -18,8 +15,7 @@ function createAction(actionType) {
 const receiveAccountLoggedInStatus = createAction(accountActions.ACCOUNT_LOGGED_IN);
 export const accountLoggedIn = _ => {
     return dispatch => {
-        return fetch(`${SERVER_URL}/currentUser`)
-            .then(response => response.json())
+        return fetchInfoFromServer('/currentUser')
             .then(json => dispatch(receiveAccountLoggedInStatus(json)));
     }
 }

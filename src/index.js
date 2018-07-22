@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker'
 import reducers from './store/reducers'
 import { accountLoggedIn } from './store/actions'
 
-const store = createStore(reducers, applyMiddleware(thunk))
+const store = createStore(reducers, applyMiddleware(thunk));
 
 const render = (Component) => {
   ReactDOM.render(
@@ -20,13 +20,13 @@ const render = (Component) => {
   )
 }
 
-render(App)
+render(App);
 registerServiceWorker();
 
 if (module.hot) {
   module.hot.accept('./components/App/App.js', () => {
-    const NextApp = require('./components/App/App.js').default // eslint-disable-line
-    render(NextApp)
+    const NextApp = require('./components/App/App.js').default; // eslint-disable-line
+    render(NextApp);
   })
 }
 
