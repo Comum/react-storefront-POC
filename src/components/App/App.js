@@ -13,6 +13,7 @@ import Header from '../Header/Header';
 import HomeContainer from '../Home/Home-container';
 import SignIn from '../SignIn/Sign-in';
 import Register from '../Register/Register';
+import Users from '../Users/Users';
 
 injectGlobal`${globalStyle}`;
 
@@ -24,6 +25,7 @@ const App = props => (
         <Route exact path="/" component={HomeContainer} />
         <Route exact path="/signIn" render={() => (<SignIn />)} />
         <Route exact path="/register" render={() => (<Register />)} />
+        <Route exact path="/users" render={() => (<Users />)} />
       </div>
     </Router>
   </Provider>
